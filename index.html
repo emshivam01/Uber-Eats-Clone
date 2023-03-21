@@ -23,55 +23,63 @@
 
 <body>
     <!-- Navbar -->
-    <header class="bg-[url('assets/hero-sm.png')] h-screen bg-cover">
+    <header class="bg-[url('assets/hero-sm.png')]  h-screen bg-cover md:bg-no-repeat md:bg-left">
         <nav class=" pt-6 px-4 flex justify-between w-full">
             <div class=" flex justify-around items-center gap-4">
-                <span class="material-icons-outlined text-3xl">
+                <span class="material-icons-outlined text-3xl md:text-4xl">
                     menu
                 </span>
-                <h1 class="text-2xl font-medium">Uber <span class="font-bold"> Eats</span></h1>
+                <h1 class="text-2xl md:text-3xl font-medium">Uber <span class="font-bold"> Eats</span></h1>
             </div>
             <div class=" flex justify-around items-center gap-4">
-                <div class="bg-white rounded-[50%] h-8 w-8  flex justify-center items-center">
-                    <span class="material-icons-outlined ">
+                <div class="bg-white rounded-[50%] h-8 w-8 md:h-10 md:w-10 flex justify-center items-center">
+                    <span class="material-icons-outlined md:text-3xl">
                         person_outline
                     </span>
                 </div>
                 <button
-                    class="p-3 text-sm font-medium bg-black rounded-2xl h-8 flex justify-center items-center text-white">Sign
+                    class="p-3 text-sm md:text-base  font-medium bg-black rounded-2xl h-8 flex justify-center items-center text-white md:p-4 md:h-10 md:rounded-3xl">Sign
                     up</button>
             </div>
         </nav>
         <!-- Hero Section -->
 
-        <section class="px-4 mt-20">
-            <h1 class="text-4xl font-extrabold">Order food to your door</h1>
+        <section class="px-4 mt-20 md:mt-32">
+            <h1 class="text-4xl md:text-[38px] font-extrabold md:text-center">Order food to your door</h1>
 
-            <div class="bg-white  flex justify-start items-center h-14 mt-4 px-4 gap-4 rounded-md">
+            <div
+                class="bg-white md:w-[440px] md:m-auto md:mt-8 flex justify-start items-center h-14 mt-4 px-4 gap-4 rounded-md">
                 <span class="material-icons-outlined">
                     location_on
                 </span>
-                <input class="placeholder:text-black" type="text" name="" id="" placeholder="Enter Delivery Address">
+                <input class="placeholder:text-black md:placeholder:text-lg" type="text" name="" id=""
+                    placeholder="Enter Delivery Address">
             </div>
 
-            <div class="bg-white flex justify-between items-center h-14  mt-4 px-4 rounded-md">
+            <div
+                class="bg-white md:w-[440px] md:m-auto md:mt-4 flex justify-between items-center h-14  mt-4 px-4 rounded-md">
                 <div class="flex items-center gap-4">
                     <span class="material-icons-outlined">
                         schedule
                     </span>
-                    <input class="placeholder:text-black" type="text" name="" id="" placeholder="Deliver Now">
+                    <input class="placeholder:text-black md:placeholder:text-lg" type="text" name="" id=""
+                        placeholder="Deliver Now">
                 </div>
                 <span class="material-icons-outlined">
                     expand_more
                 </span>
             </div>
 
-            <button class="mt-4 w-full bg-black text-white text-lg font-semibold h-14 rounded-md">Find Food</button>
+            <div class="md:mt-4 max-w-max md:m-auto">
+                <button
+                    class="mt-4 w-full md:w-[440px] md:m-auto md:block  bg-black text-white text-lg font-semibold h-14 rounded-md">Find
+                    Food</button>
 
-            <p class="mt-4 text-[14px] font-medium">
-                <a class="underline text-blue " href="">Sign in</a>
-                for your recent addresses
-            </p>
+                <p class="mt-4 text-[14px] md:text-lg font-medium">
+                    <a class="underline text-blue " href="">Sign in</a>
+                    for your recent addresses
+                </p>
+            </div>
         </section>
 
     </header>
@@ -95,20 +103,20 @@
     <section class="px-4">
         <div class="mb-8">
             <img class="rounded" src="./assets/poster1.png" alt="">
-            <h3 class="text-xl font-semibold mt-2">Feed your employees</h3>
-            <a class="underline text-sm " href="">create a business account</a>
+            <h3 class="text-xl md:text-2xl font-semibold mt-2">Feed your employees</h3>
+            <a class="underline text-sm md:text-base" href="">create a business account</a>
         </div>
 
         <div class="mb-8">
             <img class="rounded" src="./assets/poster2.png" alt="">
-            <h3 class="text-xl font-semibold mt-2">Your restaurant, devlivered</h3>
-            <a class="underline text-sm " href="">Add your restaurant</a>
+            <h3 class="text-xl md:text-2xl font-semibold mt-2">Your restaurant, devlivered</h3>
+            <a class="underline text-sm md:text-base" href="">Add your restaurant</a>
         </div>
 
         <div class="mb-8">
             <img class="rounded" src="./assets/poster2.png" alt="">
-            <h3 class="text-xl font-semibold mt-2">Deliver with Uber Eats</h3>
-            <a class="underline text-sm " href="">Sign up to deliver</a>
+            <h3 class="text-xl md:text-2xl font-semibold mt-2">Deliver with Uber Eats</h3>
+            <a class="underline text-sm md:text-base" href="">Sign up to deliver</a>
 
         </div>
     </section>
@@ -118,11 +126,11 @@
 
     <section class="px-4 my-10">
 
-        <p class="text-xl font-medium">Cities near me</p>
+        <p class="text-xl md:text-2xl font-semibold">Cities near me</p>
         <img class="mt-4" src="./assets/map.avif" alt="">
 
-        <div class="my-4 flex justify-between">
-            <ul class="text-sm font-normal flex flex-col gap-2">
+        <div class="my-4 flex justify-between md:justify-start ">
+            <ul class="text-sm md:text-xl font-normal flex flex-col gap-2 md:gap-4">
                 <li>Albuquerque</li>
                 <li>Concord</li>
                 <li>Houston</li>
@@ -131,7 +139,7 @@
                 <li>Milwaukee</li>
             </ul>
 
-            <ul class="text-sm font-normal flex flex-col gap-2">
+            <ul class="text-sm md:text-xl font-normal flex flex-col gap-2 md:gap-4 md:ml-72">
                 <li>Nashville</li>
                 <li>Oklahoma City</li>
                 <li>Providence</li>
@@ -141,13 +149,13 @@
             </ul>
         </div>
 
-        <a class="underline text-base" href="">View all 500+ cities</a>
+        <a class="underline text-base md:text-lg" href="">View all 500+ cities</a>
 
 
-        <p class="text-xl font-medium mt-8">Countries with Uber Eats</p>
+        <p class="text-xl md:text-2xl font-semibold mt-8 md:mt-12">Countries with Uber Eats</p>
 
-        <div class="my-4 flex justify-between">
-            <ul class="text-sm font-normal flex flex-col gap-2">
+        <div class="my-4 md:my-8 flex justify-between md:justify-start ">
+            <ul class="text-sm md:text-xl font-normal flex flex-col gap-2 md:gap-4">
                 <li>Australia</li>
                 <li>Belgium</li>
                 <li>Canada</li>
@@ -165,7 +173,7 @@
                 <li>Kenya</li>
             </ul>
 
-            <ul class="text-sm font-normal flex flex-col gap-2">
+            <ul class="text-sm md:text-xl font-normal flex flex-col gap-2 md:gap-4 md:ml-52">
                 <li>Mexico</li>
                 <li>Netherlands</li>
                 <li>New Zealand</li>
@@ -184,7 +192,7 @@
             </ul>
         </div>
 
-        <a class="underline text-base" href="">View all Countries</a>
+        <a class="underline text-base md:text-lg" href="">View all Countries</a>
     </section>
 
 
@@ -192,17 +200,17 @@
 
     <section class="px-4">
 
-        <div class="">
-            <h1 class="text-2xl font-medium">Uber <span class="font-bold"> Eats</span></h1>
+        <div class="md:my-16">
+            <h1 class="text-2xl md:text-3xl font-medium">Uber <span class="font-bold"> Eats</span></h1>
 
             <div class="flex gap-4 mt-8 mb-14">
-                <img class="w-32" src="./assets/app-store.svg" alt="">
-                <img class="w-32" src="./assets/play-store.png" alt="">
+                <img class="w-32 md:w-44" src="./assets/app-store.svg" alt="">
+                <img class="w-32 md:w-44" src="./assets/play-store.png" alt="">
             </div>
         </div>
 
         <div class="flex flex-col gap-8">
-            <ul class="text-sm font-normal flex flex-col gap-2">
+            <ul class="text-sm md:text-xl flex flex-col gap-2">
                 <li><a href="">Get Help</a></li>
                 <li><a href="">Buy Gift Cards</a></li>
                 <li><a href="">Add your restaurant</a></li>
@@ -211,7 +219,7 @@
                 <li><a href="">Promotions</a></li>
             </ul>
 
-            <ul class="text-sm font-normal flex flex-col gap-2">
+            <ul class="text-sm md:text-xl flex flex-col gap-2">
                 <li><a href="">Restaurant near me</a></li>
                 <li><a href="">View all cities</a></li>
                 <li><a href="">View all countries</a></li>
@@ -229,12 +237,12 @@
     <section class="px-4 mb-8">
 
         <div class="flex gap-6 mt-16 mb-8 ">
-            <img class="w-5" src="./assets/facebook.svg" alt="">
-            <img class="w-5" src="./assets/twitter.svg" alt="">
-            <img class="w-5" src="./assets/instagram.svg" alt="">
+            <img class="w-5 md:w-8" src="./assets/facebook.svg" alt="">
+            <img class="w-5 md:w-8" src="./assets/twitter.svg" alt="">
+            <img class="w-5 md:w-8" src="./assets/instagram.svg" alt="">
         </div>
 
-        <ul class="text-sm font-normal flex flex-col gap-2">
+        <ul class="text-sm md:text-xl font-normal flex flex-col gap-2">
             <li><a href="">Privacy Policy</a></li>
             <li><a href="">Terms</a></li>
             <li><a href="">Pricing</a></li>
