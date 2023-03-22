@@ -23,8 +23,8 @@
 
 <body>
     <!-- Navbar -->
-    <header class="bg-[url('assets/hero-sm.png')]  h-screen bg-cover md:bg-no-repeat md:bg-left">
-        <nav class=" pt-6 px-4 flex justify-between w-full">
+    <header class="bg-[url('assets/hero-sm.png')] lg:bg-[url('assets/hero.png')]  h-screen bg-cover md:bg-no-repeat md:bg-left lg:bg-center">
+        <nav class=" pt-6 px-4 lg:px-10 flex justify-between w-full">
             <div class=" flex justify-around items-center gap-4">
                 <span class="material-icons-outlined text-3xl md:text-4xl">
                     menu
@@ -33,7 +33,7 @@
             </div>
             <div class=" flex justify-around items-center gap-4">
                 <div class="bg-white rounded-[50%] h-8 w-8 md:h-10 md:w-10 flex justify-center items-center">
-                    <span class="material-icons-outlined md:text-3xl">
+                    <span class="material-icons-outlined md:text-3xl hover:cursor-pointer">
                         person_outline
                     </span>
                 </div>
@@ -44,7 +44,7 @@
         </nav>
         <!-- Hero Section -->
 
-        <section class="px-4 mt-20 md:mt-32">
+        <section class="px-4 lg:px-10 mt-20 md:mt-32">
             <h1 class="text-4xl md:text-[38px] font-extrabold md:text-center">Order food to your door</h1>
 
             <div
@@ -52,7 +52,7 @@
                 <span class="material-icons-outlined">
                     location_on
                 </span>
-                <input class="placeholder:text-black md:placeholder:text-lg" type="text" name="" id=""
+                <input class="placeholder:text-black md:placeholder:text-lg px-6 py-4 w-full outline-none" type="text" name="" id=""
                     placeholder="Enter Delivery Address">
             </div>
 
@@ -62,7 +62,7 @@
                     <span class="material-icons-outlined">
                         schedule
                     </span>
-                    <input class="placeholder:text-black md:placeholder:text-lg" type="text" name="" id=""
+                    <input class="placeholder:text-black md:placeholder:text-lg px-6 py-4 w-full outline-none" type="text" name="" id=""
                         placeholder="Deliver Now">
                 </div>
                 <span class="material-icons-outlined">
@@ -86,7 +86,7 @@
 
     <!-- App Section -->
 
-    <section class="px-4 my-10">
+    <section class="lg:hidden px-4 lg:px-10 my-10">
         <div class="flex items-center gap-4">
             <img class="w-16" src="./assets/app-img.svg" alt="">
             <p class="text-xl font-bold">There's more to love in the iPhone app</p>
@@ -100,21 +100,21 @@
 
     <!-- Events Section -->
 
-    <section class="px-4">
+    <section class="px-4 lg:px-10 lg:mt-14 lg:flex lg:justify-between lg:gap-10">
         <div class="mb-8">
-            <img class="rounded" src="./assets/poster1.png" alt="">
+            <img class="rounded  lg:w-auto" src="./assets/poster1.png" alt="">
             <h3 class="text-xl md:text-2xl font-semibold mt-2">Feed your employees</h3>
             <a class="underline text-sm md:text-base" href="">create a business account</a>
         </div>
 
         <div class="mb-8">
-            <img class="rounded" src="./assets/poster2.png" alt="">
+            <img class="rounded  lg:w-auto" src="./assets/poster2.png" alt="">
             <h3 class="text-xl md:text-2xl font-semibold mt-2">Your restaurant, devlivered</h3>
             <a class="underline text-sm md:text-base" href="">Add your restaurant</a>
         </div>
 
         <div class="mb-8">
-            <img class="rounded" src="./assets/poster2.png" alt="">
+            <img class="rounded  lg:w-auto" src="./assets/poster2.png" alt="">
             <h3 class="text-xl md:text-2xl font-semibold mt-2">Deliver with Uber Eats</h3>
             <a class="underline text-sm md:text-base" href="">Sign up to deliver</a>
 
@@ -124,13 +124,14 @@
 
     <!-- Map Section & Availability-->
 
-    <section class="px-4 my-10">
+    <section class="px-4 lg:px-10 my-10">
 
-        <p class="text-xl md:text-2xl font-semibold">Cities near me</p>
-        <img class="mt-4" src="./assets/map.avif" alt="">
+        <p class="text-xl md:text-2xl lg:text-3xl font-semibold">Cities near me</p>
+        <img class="mt-4 lg:w-full lg:h-96 lg:hidden" src="./assets/map.avif" alt="">
+        <img class="hidden lg:block mt-10 w-full h-96" src="./assets/map-lg.avif" alt="">
 
-        <div class="my-4 flex justify-between md:justify-start ">
-            <ul class="text-sm md:text-xl font-normal flex flex-col gap-2 md:gap-4">
+        <div class="my-4 lg:my-10 flex justify-between md:justify-start md:gap-x-64">
+            <ul class="text-sm md:text-xl font-normal flex flex-col gap-2 md:gap-4 ">
                 <li>Albuquerque</li>
                 <li>Concord</li>
                 <li>Houston</li>
@@ -139,7 +140,7 @@
                 <li>Milwaukee</li>
             </ul>
 
-            <ul class="text-sm md:text-xl font-normal flex flex-col gap-2 md:gap-4 md:ml-72">
+            <ul class="text-sm md:text-xl font-normal flex flex-col gap-2 md:gap-4 ">
                 <li>Nashville</li>
                 <li>Oklahoma City</li>
                 <li>Providence</li>
@@ -147,14 +148,32 @@
                 <li>Tucson</li>
                 <li>West Hollywood</li>
             </ul>
+
+            <ul class="text-sm md:text-xl font-normal lg:flex flex-col gap-2 md:gap-4  hidden ">
+                <li>New Orleans</li>
+                <li>Palm Bay</li>
+                <li>Mesa</li>
+                <li>Tucson</li>
+                <li>Stony Brook</li>
+                <li>Providence</li>
+            </ul>
+
+            <ul class="text-sm md:text-xl font-normal lg:flex flex-col gap-2 md:gap-4  hidden ">
+                <li>Akron</li>
+                <li>Bridgeport</li>
+                <li>McAllen</li>
+                <li>Milwaukee</li>
+                <li>Orlando</li>
+                <li>Omaha</li>
+            </ul>
         </div>
 
         <a class="underline text-base md:text-lg" href="">View all 500+ cities</a>
 
 
-        <p class="text-xl md:text-2xl font-semibold mt-8 md:mt-12">Countries with Uber Eats</p>
+        <p class="text-xl md:text-2xl lg:text-3xl font-semibold mt-8 md:mt-12">Countries with Uber Eats</p>
 
-        <div class="my-4 md:my-8 flex justify-between md:justify-start ">
+        <div class="my-4 md:my-8 flex justify-between md:justify-start md:gap-x-64">
             <ul class="text-sm md:text-xl font-normal flex flex-col gap-2 md:gap-4">
                 <li>Australia</li>
                 <li>Belgium</li>
@@ -164,6 +183,10 @@
                 <li>Dominican Republic</li>
                 <li>Ecuador</li>
                 <li>El Salvador</li>
+
+            </ul>
+
+            <ul class="text-sm md:text-xl font-normal hidden lg:flex flex-col gap-2 md:gap-4 ">
                 <li>France</li>
                 <li>Germany</li>
                 <li>Guatemala</li>
@@ -173,7 +196,7 @@
                 <li>Kenya</li>
             </ul>
 
-            <ul class="text-sm md:text-xl font-normal flex flex-col gap-2 md:gap-4 md:ml-52">
+            <ul class="text-sm md:text-xl font-normal flex flex-col gap-2 md:gap-4">
                 <li>Mexico</li>
                 <li>Netherlands</li>
                 <li>New Zealand</li>
@@ -181,6 +204,10 @@
                 <li>Poland</li>
                 <li>Portugal</li>
                 <li>South Africa</li>
+
+            </ul>
+
+            <ul class="text-sm md:text-xl font-normal hidden lg:flex flex-col gap-2 md:gap-4">
                 <li>Spain</li>
                 <li>Sri Lanka</li>
                 <li>Sweden</li>
@@ -188,6 +215,14 @@
                 <li>Taiwan</li>
                 <li>United Kingdom</li>
                 <li>United States</li>
+            </ul>
+
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
                 <li></li>
             </ul>
         </div>
@@ -198,10 +233,10 @@
 
     <!-- Apps & SM -->
 
-    <section class="px-4">
+    <section class="px-4 lg:px-10 lg:flex lg:justify-between ">
 
-        <div class="md:my-16">
-            <h1 class="text-2xl md:text-3xl font-medium">Uber <span class="font-bold"> Eats</span></h1>
+        <div class="md:my-16 lg:h-full">
+            <h1 class="text-2xl md:text-3xl lg:mb-28 font-medium">Uber <span class="font-bold"> Eats</span></h1>
 
             <div class="flex gap-4 mt-8 mb-14">
                 <img class="w-32 md:w-44" src="./assets/app-store.svg" alt="">
@@ -209,8 +244,8 @@
             </div>
         </div>
 
-        <div class="flex flex-col gap-8">
-            <ul class="text-sm md:text-xl flex flex-col gap-2">
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-32">
+            <ul class="text-sm md:text-xl flex flex-col gap-2 lg:gap-4">
                 <li><a href="">Get Help</a></li>
                 <li><a href="">Buy Gift Cards</a></li>
                 <li><a href="">Add your restaurant</a></li>
@@ -219,7 +254,7 @@
                 <li><a href="">Promotions</a></li>
             </ul>
 
-            <ul class="text-sm md:text-xl flex flex-col gap-2">
+            <ul class="text-sm md:text-xl flex flex-col gap-2 lg:gap-4">
                 <li><a href="">Restaurant near me</a></li>
                 <li><a href="">View all cities</a></li>
                 <li><a href="">View all countries</a></li>
@@ -234,7 +269,7 @@
 
     <!-- Social Media -->
 
-    <section class="px-4 mb-8">
+    <section class="px-4 lg:px-10 mb-8 lg:flex lg:justify-between lg:items-center">
 
         <div class="flex gap-6 mt-16 mb-8 ">
             <img class="w-5 md:w-8" src="./assets/facebook.svg" alt="">
@@ -242,7 +277,7 @@
             <img class="w-5 md:w-8" src="./assets/instagram.svg" alt="">
         </div>
 
-        <ul class="text-sm md:text-xl font-normal flex flex-col gap-2">
+        <ul class="text-sm md:text-xl font-normal flex flex-col lg:flex-row gap-2 lg:gap-6">
             <li><a href="">Privacy Policy</a></li>
             <li><a href="">Terms</a></li>
             <li><a href="">Pricing</a></li>
